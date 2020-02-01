@@ -1,0 +1,13 @@
+replicaCount: 1
+
+image:
+  repository: pocteo/tounis
+  tag: latest
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  hosts:
+    - host: tounis.labs.dev.pocteo.io

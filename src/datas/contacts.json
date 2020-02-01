@@ -1,0 +1,11 @@
+[{
+  "firstname": "xxx",
+  "lastname": "yyy",
+  "position": "DevOps",
+  "independant": "Yes"
+},{
+  "firstname": "zzz",
+  "lastname": "uuu",
+  "position": "DevOps",
+  "independant": "No"
+}]

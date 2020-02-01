@@ -1,0 +1,30 @@
+{
+  "name": "tounis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm run test:unit && npm run test:func",
+    "test:unit": "mocha **/*.test.js",
+    "test:func": "newman run contacts.postman.json",
+    "start": "node app.js",
+    "build": "docker build -t tounis ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pocteo/tounis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pocteo/tounis/issues"
+  },
+  "homepage": "https://github.com/pocteo/tounis#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.0.1"
+  }
+}
