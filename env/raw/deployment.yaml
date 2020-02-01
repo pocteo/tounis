@@ -1,0 +1,20 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tounis
+spec:
+  selector:
+    matchLabels:
+      app.gitops/name: tounis
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app.gitops/name: tounis
+    spec:
+      containers:
+        - name: tounis
+          image: pocteo/tounis:latest
+          ports:
+            - containerPort: 3000
